@@ -1,0 +1,212 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    &lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+<!--    <title>Stroke Risk Prediction</title>-->
+<!--</head>-->
+
+<!--<body style="background-color: #f0f0f0;">-->
+
+<!--    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">-->
+<!--        <div class="container">-->
+<!--            <a class="navbar-brand" href="#">Stroke Risk Prediction</a>-->
+<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--                <ul class="navbar-nav ml-auto">-->
+<!--                    <li class="nav-item active">-->
+<!--                        <a class="nav-link" href="/">Home</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="/about">About</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
+
+<!--    <div class="container mt-5">-->
+<!--        <div class="row justify-content-center">-->
+<!--            <div class="col-md-6">-->
+<!--                <div class="card shadow">-->
+<!--                    <div class="card-header bg-primary text-white">-->
+<!--                        <h3 class="mb-0">Stroke Risk Prediction Form</h3>-->
+<!--                    </div>-->
+<!--                    <div class="card-body">-->
+<!--                        <form action="{{ url_for('result') }}" method="post">-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="gender">Gender</label>-->
+<!--                                <input type="text" class="form-control" id="gender" name="gender" placeholder="Enter Gender">-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="age">Age</label>-->
+<!--                                <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age">-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="hypertension">Hypertension</label>-->
+<!--                                <input type="text" class="form-control" id="hypertension" name="hypertension" placeholder="1 for Yes, 0 for No">-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="heart_disease">Heart Disease</label>-->
+<!--                                <input type="text" class="form-control" id="heart_disease" name="heart_disease" placeholder="1 for Yes, 0 for No">-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="ever_married">Ever Married</label>-->
+<!--                                <input type="text" class="form-control" id="ever_married" name="ever_married" placeholder="1 for Yes, 0 for No">-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="work_type">Work Type</label>-->
+<!--                                <input type="text" class="form-control" id="work_type" name="work_type" placeholder="0 for Govn Job, 1 for Never_worked, 2 for Private, 3 for Self-employed, 4 for Children">-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="Residence_type">Residence Type</label>-->
+<!--                                <input type="text" class="form-control" id="Residence_type" name="Residence_type" placeholder="1 for Urban, 0 for Rural">-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="avg_glucose_level">Average Glucose Level</label>-->
+<!--                                <input type="text" class="form-control" id="avg_glucose_level" name="avg_glucose_level" placeholder="Enter Average Glucose Level">-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="bmi">BMI</label>-->
+<!--                                <input type="text" class="form-control" id="bmi" name="bmi" placeholder="Enter BMI">-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="smoking_status">Smoking Status</label>-->
+<!--                                <input type="text" class="form-control" id="smoking_status" name="smoking_status" placeholder="0 for Unknown, 1 for Formerly smoked, 2 for Never smoked, 3 for Smokes">-->
+<!--                            </div>-->
+<!--                            <button type="submit" class="btn btn-primary btn-block">Submit</button>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Optional JavaScript &ndash;&gt;-->
+<!--    &lt;!&ndash; jQuery first, then Popper.js, then Bootstrap JS &ndash;&gt;-->
+<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+<!--</body>-->
+
+<!--</html>-->
+
+
+
+<!--new code -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>HealthGuard:Stroke Risk Prediction</title>
+  <style>
+    body {
+        background-image: url('{{ url_for('static', filename='background.jpg') }}');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+      .card.shadow {
+        opacity: 0.7; /* Change the opacity value as needed*/
+}
+</style>
+</style>
+</head>
+
+<body >
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container">
+            <a class="navbar-brand" href="#">HealthGuard : Stroke Risk Prediction</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-md-6 ">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white ">
+                        <h3 class="mb-0">HealthGuard : Stroke Risk Prediction</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="{{ url_for('result') }}" method="post">
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <input type="text" class="form-control" id="gender" name="gender" placeholder="Enter Gender">
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age">
+                            </div>
+                            <div class="form-group">
+                                <label for="hypertension">Hypertension</label>
+                                <input type="text" class="form-control" id="hypertension" name="hypertension" placeholder="1 for Yes, 0 for No">
+                            </div>
+                            <div class="form-group">
+                                <label for="heart_disease">Heart Disease</label>
+                                <input type="text" class="form-control" id="heart_disease" name="heart_disease" placeholder="1 for Yes, 0 for No">
+                            </div>
+                            <div class="form-group">
+                                <label for="ever_married">Ever Married</label>
+                                <input type="text" class="form-control" id="ever_married" name="ever_married" placeholder="1 for Yes, 0 for No">
+                            </div>
+                            <div class="form-group">
+                                <label for="work_type">Work Type</label>
+                                <input type="text" class="form-control" id="work_type" name="work_type" placeholder="0 for Govn Job, 1 for Never_worked, 2 for Private, 3 for Self-employed, 4 for Children">
+                            </div>
+                            <div class="form-group">
+                                <label for="Residence_type">Residence Type</label>
+                                <input type="text" class="form-control" id="Residence_type" name="Residence_type" placeholder="1 for Urban, 0 for Rural">
+                            </div>
+                            <div class="form-group">
+                                <label for="avg_glucose_level">Average Glucose Level</label>
+                                <input type="text" class="form-control" id="avg_glucose_level" name="avg_glucose_level" placeholder="Enter Average Glucose Level">
+                            </div>
+                            <div class="form-group">
+                                <label for="bmi">BMI</label>
+                                <input type="text" class="form-control" id="bmi" name="bmi" placeholder="Enter BMI">
+                            </div>
+                            <div class="form-group">
+                                <label for="smoking_status">Smoking Status</label>
+                                <input type="text" class="form-control" id="smoking_status" name="smoking_status" placeholder="0 for Unknown, 1 for Formerly smoked, 2 for Never smoked, 3 for Smokes">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
